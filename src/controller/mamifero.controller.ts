@@ -35,7 +35,6 @@ export const getString = async(req: Request, res:Response) => {
 
 
 export const updateId = async(req: Request, res:Response) => {
-
     try {
          const mamifero = await update(Number(req.params.id), req.body);
          res.status(200), res.send(mamifero);
